@@ -73,7 +73,7 @@
         
         <h2>Upload a File</h2>
         <input type="file" id="fileInput" accept=".pdf,.csv,.doc,.txt,.json" />
-        <button id="uploadButton">Upload and Correct</button>
+        <button id="uploadButton">Upload Your File</button>
         
         <h2>Corrected Text:</h2>
         <div id="correctedOutput" class="output"></div>
@@ -116,7 +116,7 @@
             };
 
             const body = JSON.stringify({
-                model: "gpt-3.5-turbo", // or "gpt-4" if you have access
+                model: "gpt-4o-mini", // or "gpt-4" if you have access
                 messages: [
                     { role: "user", content: `Correct the following text: "${inputText}"` }
                 ],
